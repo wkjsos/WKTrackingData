@@ -1,0 +1,15 @@
+{
+    "public": [
+        "UINavigationController",
+        "UITabBarController"
+    ],
+    "private": [
+        "UINavigationController",
+        "UICompatibilityInputViewController",
+        "UIRemoteInputViewController",
+        "UIKeyboardCandidateGridCollectionViewController",
+        "UIInputWindowController",
+        "UIKeyboardCandidateRowViewController",
+        "UIKeyboardHiddenViewController"
+    ]
+}

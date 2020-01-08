@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA1F8CD423C5800B00D22D7B /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F8CD323C5800B00D22D7B /* CollectionViewCell.m */; };
+		CA5250D823BD98ED003EF2E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5250D723BD98ED003EF2E0 /* AppDelegate.m */; };
+		CA5250DE23BD98ED003EF2E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5250DD23BD98ED003EF2E0 /* ViewController.m */; };
+		CA5250E123BD98ED003EF2E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5250DF23BD98ED003EF2E0 /* Main.storyboard */; };
+		CA5250E323BD98F1003EF2E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5250E223BD98F1003EF2E0 /* Assets.xcassets */; };
+		CA5250E623BD98F1003EF2E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5250E423BD98F1003EF2E0 /* LaunchScreen.storyboard */; };
+		CA5250E923BD98F1003EF2E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5250E823BD98F1003EF2E0 /* main.m */; };
+		CA5250F323BD98F1003EF2E0 /* WKTrackingDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5250F223BD98F1003EF2E0 /* WKTrackingDataTests.m */; };
+		CA5250FE23BD98F1003EF2E0 /* WKTrackingDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5250FD23BD98F1003EF2E0 /* WKTrackingDataUITests.m */; };
+		CA52512223BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511023BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m */; };
+		CA52512323BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511023BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m */; };
+		CA52512423BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511023BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m */; };
+		CA52512523BD99BB003EF2E0 /* WKTrackingDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511123BD99BB003EF2E0 /* WKTrackingDataManager.m */; };
+		CA52512623BD99BB003EF2E0 /* WKTrackingDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511123BD99BB003EF2E0 /* WKTrackingDataManager.m */; };
+		CA52512723BD99BB003EF2E0 /* WKTrackingDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511123BD99BB003EF2E0 /* WKTrackingDataManager.m */; };
+		CA52513123BD99BB003EF2E0 /* UITableView+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511923BD99BB003EF2E0 /* UITableView+Tracking.m */; };
+		CA52513423BD99BB003EF2E0 /* UIView+EventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511A23BD99BB003EF2E0 /* UIView+EventPath.m */; };
+		CA52513723BD99BB003EF2E0 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511C23BD99BB003EF2E0 /* UIViewController+Tracking.m */; };
+		CA52513A23BD99BB003EF2E0 /* UICollectionView+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52511D23BD99BB003EF2E0 /* UICollectionView+Tracking.m */; };
+		CA52515D23BDF084003EF2E0 /* NSObject+TrackingData.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52515C23BDF084003EF2E0 /* NSObject+TrackingData.m */; };
+		CA52516223BEEA40003EF2E0 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52516123BEEA40003EF2E0 /* NSString+Util.m */; };
+		CA52516523BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52516423BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m */; };
+		CA52517123BF32E9003EF2E0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517023BF32E9003EF2E0 /* SecondViewController.m */; };
+		CA52517423BF32F1003EF2E0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517323BF32F1003EF2E0 /* MineViewController.m */; };
+		CA52517723BF3677003EF2E0 /* UIResponder+EventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */; };
+		CA5251C323C325EE003EF2E0 /* UIApplication+UIControlEventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */; };
+		CA5251C623C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251C523C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m */; };
+		CA5251C923C42255003EF2E0 /* WKTrackingData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */; };
+		CA5251CC23C43237003EF2E0 /* UIAlertAction+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251CB23C43237003EF2E0 /* UIAlertAction+Tracking.m */; };
+		CA5251D023C46AB0003EF2E0 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251CF23C46AB0003EF2E0 /* NSObject+Swizzling.m */; };
+		CA5251D323C48C4B003EF2E0 /* UIAlertView+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251D223C48C4B003EF2E0 /* UIAlertView+Tracking.m */; };
+		CA5251D623C4953F003EF2E0 /* UIActionSheet+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251D523C4953F003EF2E0 /* UIActionSheet+Tracking.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA5250EF23BD98F1003EF2E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA5250CB23BD98ED003EF2E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5250D223BD98ED003EF2E0;
+			remoteInfo = WKTrackingData;
+		};
+		CA5250FA23BD98F1003EF2E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA5250CB23BD98ED003EF2E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5250D223BD98ED003EF2E0;
+			remoteInfo = WKTrackingData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA1F8CD223C5800B00D22D7B /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		CA1F8CD323C5800B00D22D7B /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		CA5250D323BD98ED003EF2E0 /* WKTrackingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKTrackingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5250D623BD98ED003EF2E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA5250D723BD98ED003EF2E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA5250DC23BD98ED003EF2E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CA5250DD23BD98ED003EF2E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CA5250E023BD98ED003EF2E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA5250E223BD98F1003EF2E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA5250E523BD98F1003EF2E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA5250E723BD98F1003EF2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5250E823BD98F1003EF2E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA5250EE23BD98F1003EF2E0 /* WKTrackingDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKTrackingDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5250F223BD98F1003EF2E0 /* WKTrackingDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKTrackingDataTests.m; sourceTree = "<group>"; };
+		CA5250F423BD98F1003EF2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5250F923BD98F1003EF2E0 /* WKTrackingDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WKTrackingDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5250FD23BD98F1003EF2E0 /* WKTrackingDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKTrackingDataUITests.m; sourceTree = "<group>"; };
+		CA5250FF23BD98F1003EF2E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA52510F23BD99BB003EF2E0 /* WKTrackingDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTrackingDataManager.h; sourceTree = "<group>"; };
+		CA52511023BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTrackingDataViewPathHelper.m; sourceTree = "<group>"; };
+		CA52511123BD99BB003EF2E0 /* WKTrackingDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTrackingDataManager.m; sourceTree = "<group>"; };
+		CA52511223BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTrackingDataViewPathHelper.h; sourceTree = "<group>"; };
+		CA52511423BD99BB003EF2E0 /* UICollectionView+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Tracking.h"; sourceTree = "<group>"; };
+		CA52511523BD99BB003EF2E0 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		CA52511923BD99BB003EF2E0 /* UITableView+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Tracking.m"; sourceTree = "<group>"; };
+		CA52511A23BD99BB003EF2E0 /* UIView+EventPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EventPath.m"; sourceTree = "<group>"; };
+		CA52511C23BD99BB003EF2E0 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		CA52511D23BD99BB003EF2E0 /* UICollectionView+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Tracking.m"; sourceTree = "<group>"; };
+		CA52511E23BD99BB003EF2E0 /* UITableView+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Tracking.h"; sourceTree = "<group>"; };
+		CA52512123BD99BB003EF2E0 /* UIView+EventPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EventPath.h"; sourceTree = "<group>"; };
+		CA52515B23BDF084003EF2E0 /* NSObject+TrackingData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TrackingData.h"; sourceTree = "<group>"; };
+		CA52515C23BDF084003EF2E0 /* NSObject+TrackingData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TrackingData.m"; sourceTree = "<group>"; };
+		CA52516023BEEA40003EF2E0 /* NSString+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Util.h"; sourceTree = "<group>"; };
+		CA52516123BEEA40003EF2E0 /* NSString+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
+		CA52516323BF17EA003EF2E0 /* UIApplication+AppdelegateNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AppdelegateNote.h"; sourceTree = "<group>"; };
+		CA52516423BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AppdelegateNote.m"; sourceTree = "<group>"; };
+		CA52516F23BF32E9003EF2E0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		CA52517023BF32E9003EF2E0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		CA52517223BF32F1003EF2E0 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		CA52517323BF32F1003EF2E0 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		CA52517523BF3677003EF2E0 /* UIResponder+EventPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+EventPath.h"; sourceTree = "<group>"; };
+		CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+EventPath.m"; sourceTree = "<group>"; };
+		CA5251C123C325EE003EF2E0 /* UIApplication+UIControlEventPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIControlEventPath.h"; sourceTree = "<group>"; };
+		CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIControlEventPath.m"; sourceTree = "<group>"; };
+		CA5251C423C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Tracking.h"; sourceTree = "<group>"; };
+		CA5251C523C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Tracking.m"; sourceTree = "<group>"; };
+		CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WKTrackingData.bundle; sourceTree = "<group>"; };
+		CA5251CA23C43237003EF2E0 /* UIAlertAction+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+Tracking.h"; sourceTree = "<group>"; };
+		CA5251CB23C43237003EF2E0 /* UIAlertAction+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+Tracking.m"; sourceTree = "<group>"; };
+		CA5251CE23C46AB0003EF2E0 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		CA5251CF23C46AB0003EF2E0 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		CA5251D123C48C4B003EF2E0 /* UIAlertView+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Tracking.h"; sourceTree = "<group>"; };
+		CA5251D223C48C4B003EF2E0 /* UIAlertView+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Tracking.m"; sourceTree = "<group>"; };
+		CA5251D423C4953F003EF2E0 /* UIActionSheet+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Tracking.h"; sourceTree = "<group>"; };
+		CA5251D523C4953F003EF2E0 /* UIActionSheet+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Tracking.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA5250D023BD98ED003EF2E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5250EB23BD98F1003EF2E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5250F623BD98F1003EF2E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA5250CA23BD98ED003EF2E0 = {
+			isa = PBXGroup;
+			children = (
+				CA5250D523BD98ED003EF2E0 /* WKTrackingData */,
+				CA5250F123BD98F1003EF2E0 /* WKTrackingDataTests */,
+				CA5250FC23BD98F1003EF2E0 /* WKTrackingDataUITests */,
+				CA5250D423BD98ED003EF2E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA5250D423BD98ED003EF2E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA5250D323BD98ED003EF2E0 /* WKTrackingData.app */,
+				CA5250EE23BD98F1003EF2E0 /* WKTrackingDataTests.xctest */,
+				CA5250F923BD98F1003EF2E0 /* WKTrackingDataUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA5250D523BD98ED003EF2E0 /* WKTrackingData */ = {
+			isa = PBXGroup;
+			children = (
+				CA52510E23BD9987003EF2E0 /* Core */,
+				CA52510C23BD9944003EF2E0 /* Samples */,
+				CA52510B23BD9930003EF2E0 /* Supporting Files */,
+			);
+			path = WKTrackingData;
+			sourceTree = "<group>";
+		};
+		CA5250F123BD98F1003EF2E0 /* WKTrackingDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA5250F223BD98F1003EF2E0 /* WKTrackingDataTests.m */,
+				CA5250F423BD98F1003EF2E0 /* Info.plist */,
+			);
+			path = WKTrackingDataTests;
+			sourceTree = "<group>";
+		};
+		CA5250FC23BD98F1003EF2E0 /* WKTrackingDataUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA5250FD23BD98F1003EF2E0 /* WKTrackingDataUITests.m */,
+				CA5250FF23BD98F1003EF2E0 /* Info.plist */,
+			);
+			path = WKTrackingDataUITests;
+			sourceTree = "<group>";
+		};
+		CA52510B23BD9930003EF2E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA5250DF23BD98ED003EF2E0 /* Main.storyboard */,
+				CA5250E223BD98F1003EF2E0 /* Assets.xcassets */,
+				CA5250E423BD98F1003EF2E0 /* LaunchScreen.storyboard */,
+				CA5250E723BD98F1003EF2E0 /* Info.plist */,
+				CA5250E823BD98F1003EF2E0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA52510C23BD9944003EF2E0 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				CA5250D623BD98ED003EF2E0 /* AppDelegate.h */,
+				CA5250D723BD98ED003EF2E0 /* AppDelegate.m */,
+				CA5250DC23BD98ED003EF2E0 /* ViewController.h */,
+				CA5250DD23BD98ED003EF2E0 /* ViewController.m */,
+				CA52516F23BF32E9003EF2E0 /* SecondViewController.h */,
+				CA52517023BF32E9003EF2E0 /* SecondViewController.m */,
+				CA52517223BF32F1003EF2E0 /* MineViewController.h */,
+				CA52517323BF32F1003EF2E0 /* MineViewController.m */,
+				CA1F8CD223C5800B00D22D7B /* CollectionViewCell.h */,
+				CA1F8CD323C5800B00D22D7B /* CollectionViewCell.m */,
+			);
+			name = Samples;
+			sourceTree = "<group>";
+		};
+		CA52510E23BD9987003EF2E0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CA5251C723C42202003EF2E0 /* Resources */,
+				CA52514723BD9BC5003EF2E0 /* Util */,
+				CA52511323BD99BB003EF2E0 /* AOP */,
+				CA52510F23BD99BB003EF2E0 /* WKTrackingDataManager.h */,
+				CA52511123BD99BB003EF2E0 /* WKTrackingDataManager.m */,
+				CA52511223BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.h */,
+				CA52511023BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CA52511323BD99BB003EF2E0 /* AOP */ = {
+			isa = PBXGroup;
+			children = (
+				CA52515B23BDF084003EF2E0 /* NSObject+TrackingData.h */,
+				CA52515C23BDF084003EF2E0 /* NSObject+TrackingData.m */,
+				CA52516323BF17EA003EF2E0 /* UIApplication+AppdelegateNote.h */,
+				CA52516423BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m */,
+				CA5251C123C325EE003EF2E0 /* UIApplication+UIControlEventPath.h */,
+				CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */,
+				CA5251C423C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.h */,
+				CA5251C523C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m */,
+				CA52511E23BD99BB003EF2E0 /* UITableView+Tracking.h */,
+				CA52511923BD99BB003EF2E0 /* UITableView+Tracking.m */,
+				CA52511423BD99BB003EF2E0 /* UICollectionView+Tracking.h */,
+				CA52511D23BD99BB003EF2E0 /* UICollectionView+Tracking.m */,
+				CA52511523BD99BB003EF2E0 /* UIViewController+Tracking.h */,
+				CA52511C23BD99BB003EF2E0 /* UIViewController+Tracking.m */,
+				CA5251CA23C43237003EF2E0 /* UIAlertAction+Tracking.h */,
+				CA5251CB23C43237003EF2E0 /* UIAlertAction+Tracking.m */,
+				CA5251D123C48C4B003EF2E0 /* UIAlertView+Tracking.h */,
+				CA5251D223C48C4B003EF2E0 /* UIAlertView+Tracking.m */,
+				CA5251D423C4953F003EF2E0 /* UIActionSheet+Tracking.h */,
+				CA5251D523C4953F003EF2E0 /* UIActionSheet+Tracking.m */,
+			);
+			path = AOP;
+			sourceTree = "<group>";
+		};
+		CA52514723BD9BC5003EF2E0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CA52516023BEEA40003EF2E0 /* NSString+Util.h */,
+				CA52516123BEEA40003EF2E0 /* NSString+Util.m */,
+				CA52517523BF3677003EF2E0 /* UIResponder+EventPath.h */,
+				CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */,
+				CA52512123BD99BB003EF2E0 /* UIView+EventPath.h */,
+				CA52511A23BD99BB003EF2E0 /* UIView+EventPath.m */,
+				CA5251CE23C46AB0003EF2E0 /* NSObject+Swizzling.h */,
+				CA5251CF23C46AB0003EF2E0 /* NSObject+Swizzling.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CA5251C723C42202003EF2E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA5250D223BD98ED003EF2E0 /* WKTrackingData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA52510223BD98F1003EF2E0 /* Build configuration list for PBXNativeTarget "WKTrackingData" */;
+			buildPhases = (
+				CA5250CF23BD98ED003EF2E0 /* Sources */,
+				CA5250D023BD98ED003EF2E0 /* Frameworks */,
+				CA5250D123BD98ED003EF2E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WKTrackingData;
+			productName = WKTrackingData;
+			productReference = CA5250D323BD98ED003EF2E0 /* WKTrackingData.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA5250ED23BD98F1003EF2E0 /* WKTrackingDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA52510523BD98F1003EF2E0 /* Build configuration list for PBXNativeTarget "WKTrackingDataTests" */;
+			buildPhases = (
+				CA5250EA23BD98F1003EF2E0 /* Sources */,
+				CA5250EB23BD98F1003EF2E0 /* Frameworks */,
+				CA5250EC23BD98F1003EF2E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA5250F023BD98F1003EF2E0 /* PBXTargetDependency */,
+			);
+			name = WKTrackingDataTests;
+			productName = WKTrackingDataTests;
+			productReference = CA5250EE23BD98F1003EF2E0 /* WKTrackingDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA5250F823BD98F1003EF2E0 /* WKTrackingDataUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA52510823BD98F1003EF2E0 /* Build configuration list for PBXNativeTarget "WKTrackingDataUITests" */;
+			buildPhases = (
+				CA5250F523BD98F1003EF2E0 /* Sources */,
+				CA5250F623BD98F1003EF2E0 /* Frameworks */,
+				CA5250F723BD98F1003EF2E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA5250FB23BD98F1003EF2E0 /* PBXTargetDependency */,
+			);
+			name = WKTrackingDataUITests;
+			productName = WKTrackingDataUITests;
+			productReference = CA5250F923BD98F1003EF2E0 /* WKTrackingDataUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA5250CB23BD98ED003EF2E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = wkj;
+				TargetAttributes = {
+					CA5250D223BD98ED003EF2E0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					CA5250ED23BD98F1003EF2E0 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CA5250D223BD98ED003EF2E0;
+					};
+					CA5250F823BD98F1003EF2E0 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CA5250D223BD98ED003EF2E0;
+					};
+				};
+			};
+			buildConfigurationList = CA5250CE23BD98ED003EF2E0 /* Build configuration list for PBXProject "WKTrackingData" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA5250CA23BD98ED003EF2E0;
+			productRefGroup = CA5250D423BD98ED003EF2E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA5250D223BD98ED003EF2E0 /* WKTrackingData */,
+				CA5250ED23BD98F1003EF2E0 /* WKTrackingDataTests */,
+				CA5250F823BD98F1003EF2E0 /* WKTrackingDataUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA5250D123BD98ED003EF2E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5251C923C42255003EF2E0 /* WKTrackingData.bundle in Resources */,
+				CA5250E623BD98F1003EF2E0 /* LaunchScreen.storyboard in Resources */,
+				CA5250E323BD98F1003EF2E0 /* Assets.xcassets in Resources */,
+				CA5250E123BD98ED003EF2E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5250EC23BD98F1003EF2E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5250F723BD98F1003EF2E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA5250CF23BD98ED003EF2E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA52517123BF32E9003EF2E0 /* SecondViewController.m in Sources */,
+				CA52513423BD99BB003EF2E0 /* UIView+EventPath.m in Sources */,
+				CA5250DE23BD98ED003EF2E0 /* ViewController.m in Sources */,
+				CA52515D23BDF084003EF2E0 /* NSObject+TrackingData.m in Sources */,
+				CA5251D023C46AB0003EF2E0 /* NSObject+Swizzling.m in Sources */,
+				CA5251D623C4953F003EF2E0 /* UIActionSheet+Tracking.m in Sources */,
+				CA1F8CD423C5800B00D22D7B /* CollectionViewCell.m in Sources */,
+				CA52516523BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m in Sources */,
+				CA5251CC23C43237003EF2E0 /* UIAlertAction+Tracking.m in Sources */,
+				CA52516223BEEA40003EF2E0 /* NSString+Util.m in Sources */,
+				CA5251C623C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m in Sources */,
+				CA5250D823BD98ED003EF2E0 /* AppDelegate.m in Sources */,
+				CA52513A23BD99BB003EF2E0 /* UICollectionView+Tracking.m in Sources */,
+				CA52513123BD99BB003EF2E0 /* UITableView+Tracking.m in Sources */,
+				CA52512523BD99BB003EF2E0 /* WKTrackingDataManager.m in Sources */,
+				CA5250E923BD98F1003EF2E0 /* main.m in Sources */,
+				CA52517723BF3677003EF2E0 /* UIResponder+EventPath.m in Sources */,
+				CA52517423BF32F1003EF2E0 /* MineViewController.m in Sources */,
+				CA5251C323C325EE003EF2E0 /* UIApplication+UIControlEventPath.m in Sources */,
+				CA5251D323C48C4B003EF2E0 /* UIAlertView+Tracking.m in Sources */,
+				CA52513723BD99BB003EF2E0 /* UIViewController+Tracking.m in Sources */,
+				CA52512223BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5250EA23BD98F1003EF2E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5250F323BD98F1003EF2E0 /* WKTrackingDataTests.m in Sources */,
+				CA52512323BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m in Sources */,
+				CA52512623BD99BB003EF2E0 /* WKTrackingDataManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5250F523BD98F1003EF2E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5250FE23BD98F1003EF2E0 /* WKTrackingDataUITests.m in Sources */,
+				CA52512423BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m in Sources */,
+				CA52512723BD99BB003EF2E0 /* WKTrackingDataManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA5250F023BD98F1003EF2E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA5250D223BD98ED003EF2E0 /* WKTrackingData */;
+			targetProxy = CA5250EF23BD98F1003EF2E0 /* PBXContainerItemProxy */;
+		};
+		CA5250FB23BD98F1003EF2E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA5250D223BD98ED003EF2E0 /* WKTrackingData */;
+			targetProxy = CA5250FA23BD98F1003EF2E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA5250DF23BD98ED003EF2E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA5250E023BD98ED003EF2E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA5250E423BD98F1003EF2E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA5250E523BD98F1003EF2E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA52510023BD98F1003EF2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA52510123BD98F1003EF2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA52510323BD98F1003EF2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36R9K9UR29;
+				INFOPLIST_FILE = WKTrackingData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WKTrackingData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA52510423BD98F1003EF2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36R9K9UR29;
+				INFOPLIST_FILE = WKTrackingData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WKTrackingData;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA52510623BD98F1003EF2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36R9K9UR29;
+				INFOPLIST_FILE = WKTrackingDataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WKTrackingDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKTrackingData.app/WKTrackingData";
+			};
+			name = Debug;
+		};
+		CA52510723BD98F1003EF2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36R9K9UR29;
+				INFOPLIST_FILE = WKTrackingDataTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WKTrackingDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WKTrackingData.app/WKTrackingData";
+			};
+			name = Release;
+		};
+		CA52510923BD98F1003EF2E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36R9K9UR29;
+				INFOPLIST_FILE = WKTrackingDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WKTrackingDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WKTrackingData;
+			};
+			name = Debug;
+		};
+		CA52510A23BD98F1003EF2E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36R9K9UR29;
+				INFOPLIST_FILE = WKTrackingDataUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WKTrackingDataUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WKTrackingData;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA5250CE23BD98ED003EF2E0 /* Build configuration list for PBXProject "WKTrackingData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA52510023BD98F1003EF2E0 /* Debug */,
+				CA52510123BD98F1003EF2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA52510223BD98F1003EF2E0 /* Build configuration list for PBXNativeTarget "WKTrackingData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA52510323BD98F1003EF2E0 /* Debug */,
+				CA52510423BD98F1003EF2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA52510523BD98F1003EF2E0 /* Build configuration list for PBXNativeTarget "WKTrackingDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA52510623BD98F1003EF2E0 /* Debug */,
+				CA52510723BD98F1003EF2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA52510823BD98F1003EF2E0 /* Build configuration list for PBXNativeTarget "WKTrackingDataUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA52510923BD98F1003EF2E0 /* Debug */,
+				CA52510A23BD98F1003EF2E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA5250CB23BD98ED003EF2E0 /* Project object */;
+}
