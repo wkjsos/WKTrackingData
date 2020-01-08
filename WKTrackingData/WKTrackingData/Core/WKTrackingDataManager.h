@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+TrackingData.h"
 
 #define kWKTrackingDataManager [WKTrackingDataManager sharedTrackingDataManager]
 

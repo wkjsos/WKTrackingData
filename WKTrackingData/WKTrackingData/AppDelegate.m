@@ -20,7 +20,8 @@
 //    
 //    self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     
-    [[WKTrackingDataManager sharedTrackingDataManager] enableTracking];
+    [kWKTrackingDataManager enableTracking];
+
     
     return YES;
 }

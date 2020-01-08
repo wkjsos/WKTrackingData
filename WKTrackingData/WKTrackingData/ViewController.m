@@ -30,6 +30,15 @@
     [tap addTarget:self action:@selector(tap)];
     
     [self.sub addGestureRecognizer:tap];
+    
+    kWKTrackingDataManager.uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
+        
+        // do something
+        
+        // remove uploaded data
+        remove();
+    };
+    
 }
 
 - (void)tap {
@@ -38,7 +47,12 @@
 - (IBAction)switchChange:(id)sender {
 }
 
-- (IBAction)buttonClick:(id)sender {
+- (IBAction)buttonClick:(UIButton *) button {
+    
+    button.wk_trackingData = @{
+        @"id" : @"4396",
+        @"type" : @"event_type"
+    };
     
     UIViewController *topVC = [UIViewController wk_topViewController];
 
