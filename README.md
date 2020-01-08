@@ -39,7 +39,7 @@ $ pod install
 
 * `UIApplication+AppdelegateNote`
 * `UIApplication+UIControlEventPath`
-* `UIGestureRecognizer+Tracking`
+* `UIView+GestureTracking`
 * `UITableView+Tracking`
 * `UICollectionView+Tracking`
 * `UIViewController+Tracking`
@@ -68,11 +68,11 @@ $ pod install
 ```objective-c
 kWKTrackingDataManager.uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
 
-      // do something
+  // do something
 
-      // remove uploaded data
-      remove();
-  };
+  // remove uploaded data
+  remove();
+};
 ```
 
 #### Add Additional parameters
