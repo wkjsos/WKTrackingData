@@ -29,6 +29,11 @@
     
     [tap addTarget:self action:@selector(tap)];
     
+    self.sub.wk_trackingData = @{
+        @"id" : @"4396",
+        @"type" : @"event_type"
+    };
+    
     [self.sub addGestureRecognizer:tap];
     
     kWKTrackingDataManager.uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
@@ -49,11 +54,9 @@
 
 - (IBAction)buttonClick:(UIButton *) button {
     
-    button.wk_trackingData = @{
-        @"id" : @"4396",
-        @"type" : @"event_type"
-    };
-    
+//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:@"message" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"confirm", nil];
+//    [alertView show];
+
     UIViewController *topVC = [UIViewController wk_topViewController];
 
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Alert" message:nil preferredStyle:UIAlertControllerStyleAlert];

@@ -10,17 +10,13 @@
 
 #import <objc/runtime.h>
 
-@interface NSObject (_TrackingData)
-@property (readwrite, nonatomic, strong, setter = wk_setTrackingData:) NSDictionary *wk_trackingData;
-@end
-
-@implementation NSObject (_TrackingData)
+@implementation NSObject (TrackingData)
 
 - (NSDictionary *)wk_trackingData {
     return (NSDictionary *)objc_getAssociatedObject(self, @selector(wk_trackingData));
 }
 
-- (void)wk_setTrackingData:(NSDictionary *)wk_trackingData {
+- (void)setWk_trackingData:(NSDictionary *)wk_trackingData {
     objc_setAssociatedObject(self, @selector(wk_trackingData), wk_trackingData, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 

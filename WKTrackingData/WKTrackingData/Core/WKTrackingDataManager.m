@@ -13,8 +13,10 @@
 #import "UITableView+Tracking.h"
 #import "UICollectionView+Tracking.h"
 #import "UIViewController+Tracking.h"
-#import "UIGestureRecognizer+Tracking.h"
+#import "UIView+GestureTracking.h"
 #import "UIAlertAction+Tracking.h"
+#import "UIAlertView+Tracking.h"
+#import "UIActionSheet+Tracking.h"
 
 #import "NSString+Util.h"
 
@@ -59,9 +61,14 @@ NSString *const kTrackingDataCachePath = @"WKData";
     [UICollectionView wk_enableCellSelectTracking];
     
     [UIViewController wk_enableTracking];
-    [UIGestureRecognizer wk_enableTracking];
-    
+    [UIView wk_enableTracking];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
     [UIAlertAction wk_enableTracking];
+    [UIAlertView wk_enableTracking];
+    [UIActionSheet wk_trackingData];
+#pragma clang diagnostic pop
 }
 
 - (void)memeryCacheTrackingData:(NSDictionary *) trackingDataDict {

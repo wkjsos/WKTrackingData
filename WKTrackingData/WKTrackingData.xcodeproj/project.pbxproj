@@ -33,12 +33,12 @@
 		CA52517423BF32F1003EF2E0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517323BF32F1003EF2E0 /* MineViewController.m */; };
 		CA52517723BF3677003EF2E0 /* UIResponder+EventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */; };
 		CA5251C323C325EE003EF2E0 /* UIApplication+UIControlEventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */; };
-		CA5251C623C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251C523C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m */; };
 		CA5251C923C42255003EF2E0 /* WKTrackingData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */; };
 		CA5251CC23C43237003EF2E0 /* UIAlertAction+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251CB23C43237003EF2E0 /* UIAlertAction+Tracking.m */; };
 		CA5251D023C46AB0003EF2E0 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251CF23C46AB0003EF2E0 /* NSObject+Swizzling.m */; };
 		CA5251D323C48C4B003EF2E0 /* UIAlertView+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251D223C48C4B003EF2E0 /* UIAlertView+Tracking.m */; };
 		CA5251D623C4953F003EF2E0 /* UIActionSheet+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251D523C4953F003EF2E0 /* UIActionSheet+Tracking.m */; };
+		CADD670B23C5E55B00F3796E /* UIView+GestureTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CADD670A23C5E55B00F3796E /* UIView+GestureTracking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,8 +103,6 @@
 		CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+EventPath.m"; sourceTree = "<group>"; };
 		CA5251C123C325EE003EF2E0 /* UIApplication+UIControlEventPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIControlEventPath.h"; sourceTree = "<group>"; };
 		CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIControlEventPath.m"; sourceTree = "<group>"; };
-		CA5251C423C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Tracking.h"; sourceTree = "<group>"; };
-		CA5251C523C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Tracking.m"; sourceTree = "<group>"; };
 		CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WKTrackingData.bundle; sourceTree = "<group>"; };
 		CA5251CA23C43237003EF2E0 /* UIAlertAction+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+Tracking.h"; sourceTree = "<group>"; };
 		CA5251CB23C43237003EF2E0 /* UIAlertAction+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+Tracking.m"; sourceTree = "<group>"; };
@@ -114,6 +112,8 @@
 		CA5251D223C48C4B003EF2E0 /* UIAlertView+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Tracking.m"; sourceTree = "<group>"; };
 		CA5251D423C4953F003EF2E0 /* UIActionSheet+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Tracking.h"; sourceTree = "<group>"; };
 		CA5251D523C4953F003EF2E0 /* UIActionSheet+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Tracking.m"; sourceTree = "<group>"; };
+		CADD670923C5E55B00F3796E /* UIView+GestureTracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GestureTracking.h"; sourceTree = "<group>"; };
+		CADD670A23C5E55B00F3796E /* UIView+GestureTracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GestureTracking.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,8 +241,8 @@
 				CA52516423BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m */,
 				CA5251C123C325EE003EF2E0 /* UIApplication+UIControlEventPath.h */,
 				CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */,
-				CA5251C423C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.h */,
-				CA5251C523C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m */,
+				CADD670923C5E55B00F3796E /* UIView+GestureTracking.h */,
+				CADD670A23C5E55B00F3796E /* UIView+GestureTracking.m */,
 				CA52511E23BD99BB003EF2E0 /* UITableView+Tracking.h */,
 				CA52511923BD99BB003EF2E0 /* UITableView+Tracking.m */,
 				CA52511423BD99BB003EF2E0 /* UICollectionView+Tracking.h */,
@@ -423,12 +423,12 @@
 				CA52516523BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m in Sources */,
 				CA5251CC23C43237003EF2E0 /* UIAlertAction+Tracking.m in Sources */,
 				CA52516223BEEA40003EF2E0 /* NSString+Util.m in Sources */,
-				CA5251C623C32B2D003EF2E0 /* UIGestureRecognizer+Tracking.m in Sources */,
 				CA5250D823BD98ED003EF2E0 /* AppDelegate.m in Sources */,
 				CA52513A23BD99BB003EF2E0 /* UICollectionView+Tracking.m in Sources */,
 				CA52513123BD99BB003EF2E0 /* UITableView+Tracking.m in Sources */,
 				CA52512523BD99BB003EF2E0 /* WKTrackingDataManager.m in Sources */,
 				CA5250E923BD98F1003EF2E0 /* main.m in Sources */,
+				CADD670B23C5E55B00F3796E /* UIView+GestureTracking.m in Sources */,
 				CA52517723BF3677003EF2E0 /* UIResponder+EventPath.m in Sources */,
 				CA52517423BF32F1003EF2E0 /* MineViewController.m in Sources */,
 				CA5251C323C325EE003EF2E0 /* UIApplication+UIControlEventPath.m in Sources */,

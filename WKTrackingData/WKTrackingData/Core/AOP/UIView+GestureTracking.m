@@ -1,17 +1,17 @@
 //
-//  UIGestureRecognizer+Tracking.m
+//  UIView+GestureTracking.m
 //  WKTrackingData
 //
-//  Created by wkj on 2020/1/6.
+//  Created by finup on 2020/1/8.
 //  Copyright © 2020 wkj. All rights reserved.
 //
 
-#import "UIGestureRecognizer+Tracking.h"
+#import "UIView+GestureTracking.h"
 
 #import "NSObject+Swizzling.h"
 #import "WKTrackingDataViewPathHelper.h"
 
-@implementation UIGestureRecognizer (Tracking)
+@implementation UIView (GestureTracking)
 
 + (void)wk_enableTracking {
     [self wk_swizzleMethod:@selector(addGestureRecognizer:) withMethod:@selector(gestureHook_addGestureRecognizer:)];

@@ -1,8 +1,8 @@
 //
-//  UIGestureRecognizer+Tracking.h
+//  UIView+GestureTracking.h
 //  WKTrackingData
 //
-//  Created by wkj on 2020/1/6.
+//  Created by finup on 2020/1/8.
 //  Copyright © 2020 wkj. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIGestureRecognizer (Tracking)
+@interface UIView (GestureTracking)
 
 + (void)wk_enableTracking;
 
