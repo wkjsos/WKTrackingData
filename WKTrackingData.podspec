@@ -17,28 +17,17 @@ Pod::Spec.new do |spec|
 
   spec.name         = "WKTrackingData"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of WKTrackingData."
+  spec.summary      = "基于AOP的全埋点库"
 
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "一款轻量级的全埋点库，除了自动追踪用户事件外，也允许业务扩展，忽略和添加自定义参数。"
 
   spec.homepage     = "https://github.com/wkjsos/WKTrackingData.git"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See https://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license = { :type => 'MIT', :text => <<-LICENSE
+         Copyright kurt_wang 2020
+         LICENSE
+  }
 
 
   spec.author       = { "kurt_wang" => "931625530@qq.com" }
@@ -61,9 +50,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "WKTrackingData/Core/*", "WKTrackingData/Core/Resources/*", "WKTrackingData/Core/Util/*", "WKTrackingData/Core/AOP/*"
-  # spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "WKTrackingData/WKTrackingData/Core/*", "WKTrackingData/WKTrackingData/Core/Resources/*", "WKTrackingData/WKTrackingData/Core/Util/*", "WKTrackingData/WKTrackingData/Core/AOP/*"
 
-  # spec.public_header_files = "Classes/**/*.h"
 
 end
