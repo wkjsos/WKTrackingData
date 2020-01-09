@@ -65,7 +65,8 @@ $ pod install
     [kWKTrackingDataManager enableTracking];
     return YES;
 }
-```objective-c
+​``` 
+```
 在`didFinishLaunchingWithOptions`中开启事件追踪，如果在`didFinishLaunchingWithOptions`之后启用，会导致部分事件无法覆盖。
 
 ```objective-c
@@ -73,6 +74,7 @@ $ pod install
 kWKTrackingDataManager.memeryItemCount = 60;
 kWKTrackingDataManager.uploadType = WKTrackingDataUploadDefault;
 ```
+
 可以自定义内存中超过多少条事件触发上传，以及上传的类型。
 
 #### Upload Tracking Data
@@ -124,7 +126,7 @@ self.button.wk_trackingData = @{
 ]
 ```
 
-对于不希望有事件追踪的控件，可以通过 `wk_ignoreTracking` 进行忽略：
+对于不希望进行事件追踪的控件，可以通过 `wk_ignoreTracking` 进行忽略：
 ```objective-c
 self.slider.wk_ignoreTracking = YES;
 ```
