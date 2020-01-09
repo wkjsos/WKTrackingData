@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WKTrackingData"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "基于AOP的全埋点库"
 
   spec.description  = "一款轻量级的全埋点库，除了自动追踪用户事件外，也允许业务扩展，忽略和添加自定义参数。"
