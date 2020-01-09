@@ -18,8 +18,8 @@
     [super viewDidLoad];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"tableView didSelectRowAtIndexPath");
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSLog(@"tableView didSelectRowAtIndexPath");
+//}
 
 @end

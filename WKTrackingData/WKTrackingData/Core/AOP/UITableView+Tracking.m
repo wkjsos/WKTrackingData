@@ -34,15 +34,15 @@
          如果 UITableView 的 delegate 未实现 tableView:didSelectRowAtIndexPath
          那么 UITableViewCell 发生点击之后，不会再 respondsToSelector tableView:didSelectRowAtIndexPath
          直接给未实现 method 的 SEL 添加实现的方式不再适用，单独处理：
-         这里直接选取了 @selector(_selectRowAtIndexPath:animated:scrollPosition:notifyDelegate:) 进行交换
+         这里直接选取了 @selector(_userSelectRowAtPendingSelectionIndexPath:) 进行交换
          */
         
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
-        SEL privateSel_ = @selector(_selectRowAtIndexPath:animated:scrollPosition:notifyDelegate:);
+        SEL privateSel_ = @selector(_userSelectRowAtPendingSelectionIndexPath:);
 #pragma clang diagnostic pop
         
-        [self wk_swizzleInstanceSelector:privateSel_ replaceSelector:@selector(tracking_selectRowAtIndexPath:animated:scrollPosition:notifyDelegate:)];
+        [self wk_swizzleInstanceSelector:privateSel_ replaceSelector:@selector(tracking_userSelectRowAtPendingSelectionIndexPath:)];
     }
 }
 
@@ -55,11 +55,11 @@
 
 #pragma mark - 如果未实现代理
 
-- (void)tracking_selectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(CGPoint)position notifyDelegate:(id)delegate {
+- (void)tracking_userSelectRowAtPendingSelectionIndexPath:(NSIndexPath *)indexPath {
     
     [WKTrackingDataViewPathHelper viewPath_didSelectItemFrom:self forIndexPath:indexPath];
 
-    [self tracking_selectRowAtIndexPath:indexPath animated:animated scrollPosition:position notifyDelegate:delegate];
+    [self tracking_userSelectRowAtPendingSelectionIndexPath:indexPath];
 }
 
 @end
