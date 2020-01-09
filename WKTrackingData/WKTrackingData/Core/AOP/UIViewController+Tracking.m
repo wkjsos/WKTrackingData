@@ -43,8 +43,9 @@
 + (void)wk_enableTracking {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self wk_swizzleMethod:@selector(viewDidAppear:) withMethod:@selector(wk_tracking_viewDidAppear:)];
-        [self wk_swizzleMethod:@selector(viewDidDisappear:) withMethod:@selector(wk_tracking_viewDidDisappear:)];
+        
+        [self wk_swizzleInstanceSelector:@selector(viewDidAppear:) replaceSelector:@selector(wk_tracking_viewDidAppear:)];
+        [self wk_swizzleInstanceSelector:@selector(viewDidDisappear:) replaceSelector:@selector(wk_tracking_viewDidDisappear:)];
     });
 }
 

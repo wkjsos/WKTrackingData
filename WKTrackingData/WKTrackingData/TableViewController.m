@@ -6,13 +6,13 @@
 //  Copyright © 2020 wkj. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "TableViewController.h"
 
-@interface SecondViewController ()
+@interface TableViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

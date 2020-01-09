@@ -29,8 +29,8 @@
 		CA52515D23BDF084003EF2E0 /* NSObject+TrackingData.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52515C23BDF084003EF2E0 /* NSObject+TrackingData.m */; };
 		CA52516223BEEA40003EF2E0 /* NSString+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52516123BEEA40003EF2E0 /* NSString+Util.m */; };
 		CA52516523BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52516423BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m */; };
-		CA52517123BF32E9003EF2E0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517023BF32E9003EF2E0 /* SecondViewController.m */; };
-		CA52517423BF32F1003EF2E0 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517323BF32F1003EF2E0 /* MineViewController.m */; };
+		CA52517123BF32E9003EF2E0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517023BF32E9003EF2E0 /* TableViewController.m */; };
+		CA52517423BF32F1003EF2E0 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517323BF32F1003EF2E0 /* CollectionViewController.m */; };
 		CA52517723BF3677003EF2E0 /* UIResponder+EventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */; };
 		CA5251C323C325EE003EF2E0 /* UIApplication+UIControlEventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */; };
 		CA5251C923C42255003EF2E0 /* WKTrackingData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */; };
@@ -95,10 +95,10 @@
 		CA52516123BEEA40003EF2E0 /* NSString+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Util.m"; sourceTree = "<group>"; };
 		CA52516323BF17EA003EF2E0 /* UIApplication+AppdelegateNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+AppdelegateNote.h"; sourceTree = "<group>"; };
 		CA52516423BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+AppdelegateNote.m"; sourceTree = "<group>"; };
-		CA52516F23BF32E9003EF2E0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		CA52517023BF32E9003EF2E0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		CA52517223BF32F1003EF2E0 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
-		CA52517323BF32F1003EF2E0 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		CA52516F23BF32E9003EF2E0 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		CA52517023BF32E9003EF2E0 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		CA52517223BF32F1003EF2E0 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		CA52517323BF32F1003EF2E0 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		CA52517523BF3677003EF2E0 /* UIResponder+EventPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+EventPath.h"; sourceTree = "<group>"; };
 		CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+EventPath.m"; sourceTree = "<group>"; };
 		CA5251C123C325EE003EF2E0 /* UIApplication+UIControlEventPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIControlEventPath.h"; sourceTree = "<group>"; };
@@ -208,10 +208,10 @@
 				CA5250D723BD98ED003EF2E0 /* AppDelegate.m */,
 				CA5250DC23BD98ED003EF2E0 /* ViewController.h */,
 				CA5250DD23BD98ED003EF2E0 /* ViewController.m */,
-				CA52516F23BF32E9003EF2E0 /* SecondViewController.h */,
-				CA52517023BF32E9003EF2E0 /* SecondViewController.m */,
-				CA52517223BF32F1003EF2E0 /* MineViewController.h */,
-				CA52517323BF32F1003EF2E0 /* MineViewController.m */,
+				CA52516F23BF32E9003EF2E0 /* TableViewController.h */,
+				CA52517023BF32E9003EF2E0 /* TableViewController.m */,
+				CA52517223BF32F1003EF2E0 /* CollectionViewController.h */,
+				CA52517323BF32F1003EF2E0 /* CollectionViewController.m */,
 				CA1F8CD223C5800B00D22D7B /* CollectionViewCell.h */,
 				CA1F8CD323C5800B00D22D7B /* CollectionViewCell.m */,
 			);
@@ -413,7 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA52517123BF32E9003EF2E0 /* SecondViewController.m in Sources */,
+				CA52517123BF32E9003EF2E0 /* TableViewController.m in Sources */,
 				CA52513423BD99BB003EF2E0 /* UIView+EventPath.m in Sources */,
 				CA5250DE23BD98ED003EF2E0 /* ViewController.m in Sources */,
 				CA52515D23BDF084003EF2E0 /* NSObject+TrackingData.m in Sources */,
@@ -430,7 +430,7 @@
 				CA5250E923BD98F1003EF2E0 /* main.m in Sources */,
 				CADD670B23C5E55B00F3796E /* UIView+GestureTracking.m in Sources */,
 				CA52517723BF3677003EF2E0 /* UIResponder+EventPath.m in Sources */,
-				CA52517423BF32F1003EF2E0 /* MineViewController.m in Sources */,
+				CA52517423BF32F1003EF2E0 /* CollectionViewController.m in Sources */,
 				CA5251C323C325EE003EF2E0 /* UIApplication+UIControlEventPath.m in Sources */,
 				CA5251D323C48C4B003EF2E0 /* UIAlertView+Tracking.m in Sources */,
 				CA52513723BD99BB003EF2E0 /* UIViewController+Tracking.m in Sources */,

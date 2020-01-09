@@ -1,5 +1,5 @@
 //
-//  MineViewController.h
+//  SecondViewController.h
 //  WKTrackingData
 //
 //  Created by wkj on 2020/1/3.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MineViewController : UIViewController
+@interface TableViewController : UITableViewController
 
 @end
 

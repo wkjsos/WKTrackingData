@@ -72,6 +72,7 @@ NSString *const kTrackingDataCachePath = @"WKData";
 }
 
 - (void)memeryCacheTrackingData:(NSDictionary *) trackingDataDict {
+    NSLog(@"trackingDataDict: %@" , trackingDataDict);
     [self.trackingDataArrayM addObject:trackingDataDict];
         
     [self trackingUploadOrNot];

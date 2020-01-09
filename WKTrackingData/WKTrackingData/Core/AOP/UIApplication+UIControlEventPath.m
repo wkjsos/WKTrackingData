@@ -14,7 +14,8 @@
 @implementation UIApplication (UIControlEventPath)
 
 + (void)wk_enableUIControlTracking {
-    [self wk_swizzleMethod:@selector(sendAction:to:from:forEvent:) withMethod:@selector(wk_sendAction:to:from:forEvent:)];
+    
+    [self wk_swizzleInstanceSelector:@selector(sendAction:to:from:forEvent:) replaceSelector:@selector(wk_sendAction:to:from:forEvent:)];
 }
 
 - (BOOL)wk_sendAction:(SEL)action

@@ -2,7 +2,7 @@
 //  CollectionViewCell.h
 //  WKTrackingData
 //
-//  Created by finup on 2020/1/8.
+//  Created by wkj on 2020/1/8.
 //  Copyright © 2020 wkj. All rights reserved.
 //
 

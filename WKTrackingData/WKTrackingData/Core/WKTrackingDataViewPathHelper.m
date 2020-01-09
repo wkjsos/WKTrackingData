@@ -22,6 +22,10 @@
 
 + (void)viewPath_sendAction:(SEL)action to:(nullable id)to from:(nullable id)from forEvent:(nullable UIEvent *)event {
     
+    if ([from wk_ignoreTracking]) {
+        return;
+    }
+    
     NSMutableString *eventPathM = [NSMutableString string];
 
     [eventPathM appendString:[NSString stringWithFormat:@"#%@",NSStringFromSelector(action)]];
@@ -40,6 +44,10 @@
 
 + (void)viewPath_gestureRecognizer:(UIGestureRecognizer *)gestureRecgnizer {
     
+    if ([gestureRecgnizer.view wk_ignoreTracking]) {
+        return;
+    }
+    
     if (gestureRecgnizer.state != UIGestureRecognizerStateEnded) {
         return;
     }
@@ -52,8 +60,6 @@
     
     NSString *finalEventPath = [self combineTrackingDataFromSender:gestureRecgnizer.view path:eventPathM];
     
-    NSLog(@"viewPath_gestureRecognizer:%@" , finalEventPath);
-
     [kWKTrackingDataManager memeryCacheTrackingData:@{
         kWKTrackingDataEventIDKey : finalEventPath.wk_md5Uppercase,
         kWKTrackingDataEventPathKey : finalEventPath,
@@ -62,6 +68,10 @@
 }
 
 + (void)viewPath_viewController:(UIViewController *)viewController actionSel:(SEL)selector {
+    
+    if ([viewController wk_ignoreTracking]) {
+        return;
+    }
     
     NSMutableString *eventPathM = [[NSMutableString alloc] init];
     [eventPathM appendFormat:@"#%@",NSStringFromSelector(selector)];
@@ -77,6 +87,10 @@
 }
 
 + (void)viewPath_didSelectItemFrom:(id)sender forIndexPath:(NSIndexPath *) indexPath {
+    
+    if ([sender wk_ignoreTracking]) {
+        return;
+    }
     
     NSMutableString *eventPathM = [NSMutableString string];
     
@@ -108,6 +122,10 @@
 
 + (void)viewPath_alertAction:(UIAlertAction *)action {
     
+    if ([action wk_ignoreTracking]) {
+        return;
+    }
+    
     NSMutableString *eventPathM = [NSMutableString string];
     
     [eventPathM appendFormat:@"topVc_%@", [UIViewController wk_topViewController].wk_eventPathIdentifier];
@@ -132,8 +150,6 @@
     
     NSString *finalEventPath = [self combineTrackingDataFromSender:action path:eventPathM];
     
-    NSLog(@"viewPath_alertAction:%@" , finalEventPath);
-
     [kWKTrackingDataManager memeryCacheTrackingData:@{
         kWKTrackingDataEventIDKey : finalEventPath.wk_md5Uppercase,
         kWKTrackingDataEventPathKey : finalEventPath,
@@ -144,6 +160,10 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 + (void)viewPath_alertView:(UIAlertView *) alertView clickedButtonAtIndex:(NSInteger )buttonIndex {
+    
+    if ([alertView wk_ignoreTracking]) {
+        return;
+    }
     
     NSMutableString *eventPathM = [NSMutableString string];
     
@@ -166,6 +186,11 @@
 }
 
 + (void)viewPath_actionSheet:(UIActionSheet *) actionSheet clickedButtonAtIndex:(NSInteger )buttonIndex {
+    
+    if ([actionSheet wk_ignoreTracking]) {
+        return;
+    }
+    
     NSMutableString *eventPathM = [NSMutableString string];
     
     [eventPathM appendString:[actionSheet wk_eventPathIdentifier]];

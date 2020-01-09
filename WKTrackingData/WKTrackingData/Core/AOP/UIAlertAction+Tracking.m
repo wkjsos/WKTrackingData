@@ -16,7 +16,8 @@ typedef void (^WKActionHandler)(UIAlertAction *action);
 @implementation UIAlertAction (Tracking)
 
 + (void)wk_enableTracking {
-    [self wk_swizzleClassMethod:@selector(actionWithTitle:style:handler:) withClassMethod:@selector(wk_actionWithTitle:style:handler:)];
+    
+    [self wk_swizzleClassSelector:@selector(actionWithTitle:style:handler:) replaceSelector:@selector(wk_actionWithTitle:style:handler:)];
 }
 
 + (instancetype)wk_actionWithTitle:(nullable NSString *)title style:(UIAlertActionStyle)style handler:(void (^ __nullable)(UIAlertAction *action))handler {

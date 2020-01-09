@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zhx-65-0Jq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -107,6 +108,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cvW-Wn-T78"/>
                     <connections>
+                        <outlet property="slider" destination="Bla-wn-joN" id="UQM-Vv-b9F"/>
                         <outlet property="sub" destination="iZD-D1-R6X" id="JAN-he-ibH"/>
                     </connections>
                 </viewController>
@@ -167,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1322" y="31"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="niL-bs-cW1">
             <objects>
-                <tableViewController id="BNZ-xO-GIW" customClass="SecondViewController" sceneMemberID="viewController">
+                <tableViewController id="BNZ-xO-GIW" customClass="TableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XLf-bz-AwP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="2380" y="31"/>
         </scene>
-        <!--Mine View Controller-->
+        <!--Collection View Controller-->
         <scene sceneID="CIG-xY-ObV">
             <objects>
-                <viewController id="UkP-GF-pkP" customClass="MineViewController" sceneMemberID="viewController">
+                <viewController id="UkP-GF-pkP" customClass="CollectionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZLI-V1-1Q6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

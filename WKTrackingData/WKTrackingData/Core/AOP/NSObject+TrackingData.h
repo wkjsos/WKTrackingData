@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 实现了trackingDataDictionary后，view_path拼接为：#viewController#view#label?key1=value1&key2=value2
 @property (nonatomic, strong) NSDictionary *wk_trackingData ;
 
+/// 是否需要主动忽略某些控件的追踪，默认为NO
+@property (nonatomic, assign) BOOL wk_ignoreTracking ;
+
 @end
 
 NS_ASSUME_NONNULL_END

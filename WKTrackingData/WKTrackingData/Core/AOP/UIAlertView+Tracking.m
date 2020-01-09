@@ -17,13 +17,14 @@
 @implementation UIAlertView (Tracking)
 
 + (void)wk_enableTracking {
-    [self wk_swizzleMethod:@selector(setDelegate:) withMethod:@selector(wk_setAlertViewDelegate:)];
+    
+    [self wk_swizzleInstanceSelector:@selector(setDelegate:) replaceSelector:@selector(wk_setAlertViewDelegate:)];
 }
 
 - (void)wk_setAlertViewDelegate:(id) delegate {
     [self wk_setAlertViewDelegate:delegate];
     
-    [NSObject wk_swizzlingDelegate:[delegate class] originSel:@selector(alertView:clickedButtonAtIndex:) replacedClass:[self class] replaceSel:@selector(tracking_alertView:clickedButtonAtIndex:) delegateNotImp:@selector(tracking_notImp_alertView:clickedButtonAtIndex:)];
+    [delegate wk_swizzleInstanceSelector:@selector(alertView:clickedButtonAtIndex:) fromClass:[self class] replaceSelector:@selector(tracking_alertView:clickedButtonAtIndex:) originNotImp:@selector(tracking_notImp_alertView:clickedButtonAtIndex:)];
 }
 
 - (void)tracking_alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {

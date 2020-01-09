@@ -20,4 +20,12 @@
     objc_setAssociatedObject(self, @selector(wk_trackingData), wk_trackingData, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+- (BOOL)wk_ignoreTracking {
+    return [objc_getAssociatedObject(self, @selector(wk_ignoreTracking)) boolValue];
+}
+
+- (void)setWk_ignoreTracking:(BOOL)wk_ignoreTracking {
+    objc_setAssociatedObject(self, @selector(wk_ignoreTracking), @(wk_ignoreTracking), OBJC_ASSOCIATION_ASSIGN);
+}
+
 @end

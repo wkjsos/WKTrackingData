@@ -17,13 +17,14 @@
 @implementation UIActionSheet (Tracking)
 
 + (void)wk_enableTracking {
-    [self wk_swizzleMethod:@selector(setDelegate:) withMethod:@selector(wk_setActionSheetDelegate:)];
+    
+    [self wk_swizzleInstanceSelector:@selector(setDelegate:) replaceSelector:@selector(wk_setActionSheetDelegate:)];
 }
 
 - (void)wk_setActionSheetDelegate:(id) delegate {
     [self wk_setActionSheetDelegate:delegate];
     
-    [NSObject wk_swizzlingDelegate:[delegate class] originSel:@selector(actionSheet:clickedButtonAtIndex:) replacedClass:[self class] replaceSel:@selector(delegateTracking_actionSheet:clickedButtonAtIndex:) delegateNotImp:@selector(delegateTracking_notImp_actionSheet:clickedButtonAtIndex:)];
+    [delegate wk_swizzleInstanceSelector:@selector(actionSheet:clickedButtonAtIndex:) fromClass:[self class] replaceSelector:@selector(delegateTracking_actionSheet:clickedButtonAtIndex:) originNotImp:@selector(delegateTracking_notImp_actionSheet:clickedButtonAtIndex:)];
 }
 
 - (void)delegateTracking_actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {

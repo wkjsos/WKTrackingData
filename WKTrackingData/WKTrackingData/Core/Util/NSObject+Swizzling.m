@@ -12,68 +12,77 @@
 
 @implementation NSObject (Swizzling)
 
-+ (BOOL)wk_swizzleMethod:(SEL)origSel_ withMethod:(SEL)replaceSel_ {
-    
-    Method origMethod = class_getInstanceMethod(self, origSel_);
-    Method replaceMethod = class_getInstanceMethod(self, replaceSel_);
+// This implementation of swizzling was lifted from http://nshipster.com/method-swizzling
+- (void)wk_swizzleInstanceSelector:(SEL)origSel_ replaceSelector:(SEL)replaceSel_ {
+    Method origMethod = class_getInstanceMethod([self class], origSel_);
+    Method replaceMethod = class_getInstanceMethod([self class], replaceSel_);
 
     BOOL didAddMethod =
-    class_addMethod(self,
+    class_addMethod([self class],
                     origSel_,
                     method_getImplementation(replaceMethod),
                     method_getTypeEncoding(replaceMethod));
     
     if (didAddMethod) {
-        class_replaceMethod(self,
+        class_replaceMethod([self class],
                             replaceSel_,
                             method_getImplementation(replaceMethod),
                             method_getTypeEncoding(replaceMethod));
     } else {
         method_exchangeImplementations(origMethod, replaceMethod);
     }
-    return YES;
 }
 
-+ (BOOL)wk_swizzleClassMethod:(SEL)origSel_ withClassMethod:(SEL)replaceSel_ {
-    return [object_getClass(self) wk_swizzleMethod:origSel_ withMethod:replaceSel_];
+- (void)wk_swizzleClassSelector:(SEL)origSel_ replaceSelector:(SEL)replaceSel_ {
+    [object_getClass(self) wk_swizzleInstanceSelector:origSel_ replaceSelector:replaceSel_];
 }
 
-+ (void)wk_swizzlingDelegate:(Class) delegateClass originSel:(SEL) origSel_ replacedClass:(Class) replacedClass replaceSel:(SEL) replaceSel_ delegateNotImp:(SEL) notImpSel_ {
+- (void)wk_swizzleInstanceSelector:(SEL)origSel_ fromClass:(Class)fromClass replaceSelector:(SEL)replaceSel_ {
     
-    Method originalMethod = class_getInstanceMethod(delegateClass, origSel_);
-    Method replacedMethod = class_getInstanceMethod(replacedClass, replaceSel_);
+    Method origMethod = class_getInstanceMethod([self class], origSel_);
+    Method replaceMethod = class_getInstanceMethod(fromClass, replaceSel_);
     
-    if (!originalMethod) {
-        Method notImpMethod = class_getInstanceMethod(replacedClass, notImpSel_);
-        
+    NSAssert(origMethod, NSStringFromClass([self class]) , @" did not imp method ", NSStringFromSelector(origSel_));
+    NSAssert(replaceMethod, NSStringFromClass([fromClass class]) , @" did not imp method ", NSStringFromSelector(replaceSel_));
+
+    // 给self添加 replaceSel_ 的实现，如果添加成功，则交换self的 replaceSel_ 和 origSel_
+    BOOL didAddMethod =
+    class_addMethod([self class],
+                    replaceSel_,
+                    method_getImplementation(replaceMethod),
+                    method_getTypeEncoding(replaceMethod));
+    
+    if (didAddMethod) {
+        Method origReplaceMeth = class_getInstanceMethod([self class], replaceSel_);
+        method_exchangeImplementations(origMethod, origReplaceMeth);
+    } else {
+        method_exchangeImplementations(origMethod, replaceMethod);
+    }
+}
+
+- (void)wk_swizzleClassSelector:(SEL)origSel_ fromClass:(Class)fromClass replaceSelector:(SEL)replaceSel_ {
+    [object_getClass(self) wk_swizzleInstanceSelector:origSel_ fromClass:fromClass replaceSelector:replaceSel_];
+}
+
+- (void)wk_swizzleInstanceSelector:(SEL)origSel_ fromClass:(Class)fromClass replaceSelector:(SEL)replaceSel_ originNotImp:(SEL)notImpSel_ {
+    
+    Method originalMethod = class_getInstanceMethod([self class], origSel_);
+    
+    if (originalMethod) {
+        [self wk_swizzleInstanceSelector:origSel_ fromClass:fromClass replaceSelector:replaceSel_];
+    } else {
+        Method notImpMethod = class_getInstanceMethod(fromClass, notImpSel_);
+
         // 如果delegateClass没有实现 origSel_ 方法
         // 则给delegateClass的 origSel_ 添加 orginReplaceMethod 的实现
         BOOL didAddNotImpMethod =
-        class_addMethod(delegateClass,
+        class_addMethod([self class],
                         origSel_,
                         method_getImplementation(notImpMethod),
                         method_getTypeEncoding(notImpMethod));
         if (didAddNotImpMethod) {
-            NSLog(@"%@ did add not imp method %@" , NSStringFromClass(delegateClass) , NSStringFromSelector(notImpSel_));
+            NSLog(@"%@ did add not imp method %@" , NSStringFromClass([self class]) , NSStringFromSelector(notImpSel_));
         }
-        return;
-    }
-    
-    // delegateClass 已经实现了 origSel_ 方法
-    // 给 delegateClass 的 replacedSel 添加 replacedMethod 实现
-    BOOL didAddMethod =
-    class_addMethod(delegateClass,
-                    replaceSel_,
-                    method_getImplementation(replacedMethod),
-                    method_getTypeEncoding(replacedMethod));
-    
-    if (didAddMethod) {
-        // 如果添加成功，则交换 originalMethod 和 replacedMethod
-        Method newMethod = class_getInstanceMethod(delegateClass, replaceSel_);
-        method_exchangeImplementations(originalMethod, newMethod);
-    }else{
-        // 添加失败，则说明已经给 delegateClass 添加过 replacedMethod，防止多次交换。
-        NSLog(@"%@ already hook",NSStringFromClass(delegateClass));
     }
 }
 

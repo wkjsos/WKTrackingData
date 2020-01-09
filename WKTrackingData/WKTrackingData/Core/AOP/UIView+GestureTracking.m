@@ -2,7 +2,7 @@
 //  UIView+GestureTracking.m
 //  WKTrackingData
 //
-//  Created by finup on 2020/1/8.
+//  Created by wkj on 2020/1/8.
 //  Copyright © 2020 wkj. All rights reserved.
 //
 
@@ -14,7 +14,8 @@
 @implementation UIView (GestureTracking)
 
 + (void)wk_enableTracking {
-    [self wk_swizzleMethod:@selector(addGestureRecognizer:) withMethod:@selector(gestureHook_addGestureRecognizer:)];
+
+    [self wk_swizzleInstanceSelector:@selector(addGestureRecognizer:) replaceSelector:@selector(gestureHook_addGestureRecognizer:)];
 }
 
 - (void)gestureHook_addGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer {

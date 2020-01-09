@@ -6,11 +6,11 @@
 //  Copyright © 2020 wkj. All rights reserved.
 //
 
-#import "MineViewController.h"
+#import "CollectionViewController.h"
 
 #import "CollectionViewCell.h"
 
-@interface MineViewController ()
+@interface CollectionViewController ()
 
     <
         UICollectionViewDataSource,
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation MineViewController
+@implementation CollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,7 +33,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor systemGray2Color];
+    cell.backgroundColor = [UIColor grayColor];
     return cell;
 }
 
@@ -47,9 +47,9 @@
 
 #pragma mark - UICollectionViewDelegate
 
-//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-//
-//}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+
+}
 
 #pragma mark - getter
 

@@ -17,6 +17,7 @@
 <UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *sub;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
 
 @end
 
@@ -35,6 +36,8 @@
     };
     
     [self.sub addGestureRecognizer:tap];
+    
+    self.slider.wk_ignoreTracking = YES;
     
     kWKTrackingDataManager.uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
         
@@ -56,6 +59,7 @@
     
 //    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:@"message" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"confirm", nil];
 //    [alertView show];
+//    return;
 
     UIViewController *topVC = [UIViewController wk_topViewController];
 
