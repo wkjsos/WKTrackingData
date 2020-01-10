@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NSObject+TrackingData.h"
 
-#define kWKTrackingDataManager [WKTrackingDataManager sharedTrackingDataManager]
+#define kWKTrackingDataManager [WKTrackingDataManager sharedManager]
 
 typedef enum : NSUInteger {
     WKTrackingDataUploadDefault = 0,            // 默认上传规则，启动时上传，超过内存缓存数量后再次触发上传
@@ -32,7 +32,7 @@ typedef enum : NSUInteger {
 /// 注意需要主动调用^remove才能将已消费的trackingDataArray删除
 @property (nonatomic, copy, readwrite) void (^uploadTrackingDataTrigger)(NSArray *trackingDataArray , void (^remove)(void)) ;
 
-+ (instancetype)sharedTrackingDataManager;
++ (instancetype)sharedManager;
 
 /// 开启事件统计
 - (void)enableTracking;

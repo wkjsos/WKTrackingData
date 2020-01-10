@@ -20,7 +20,6 @@
 
 #import "NSString+Util.h"
 
-
 NSString *const kTrackingDataCachePath = @"WKData";
 
 @interface WKTrackingDataManager()
@@ -35,7 +34,7 @@ NSString *const kTrackingDataCachePath = @"WKData";
 
 @implementation WKTrackingDataManager
 
-+ (instancetype)sharedTrackingDataManager {
++ (instancetype)sharedManager {
     static WKTrackingDataManager *trackingDataManager;
     static dispatch_once_t onceToken;
     

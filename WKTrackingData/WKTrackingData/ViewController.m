@@ -89,7 +89,7 @@
 #pragma mark - private method
 
 - (void)test {
-    [WKTrackingDataManager sharedTrackingDataManager].uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
+    kWKTrackingDataManager.uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
         NSLog(@"trackingDataArray");
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -98,7 +98,7 @@
     };
     
     for (int i = 0; i < 31; i++) {
-        [[WKTrackingDataManager sharedTrackingDataManager] memeryCacheTrackingData:@{
+        [kWKTrackingDataManager memeryCacheTrackingData:@{
             [NSString stringWithFormat:@"key:%@" , @(i)] : [NSString stringWithFormat:@"value:%@" , @(i)]
         }];
     }
