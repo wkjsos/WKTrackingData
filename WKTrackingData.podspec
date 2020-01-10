@@ -57,10 +57,13 @@ Pod::Spec.new do |spec|
   }
 
   # 子目录
-  spec.subspec 'Util' do |Util|
-  Util.source_files = 'WKTrackingData/WKTrackingData/Core/Util/*'
+  spec.subspec 'Util' do |ss|
+    ss.source_files = "WKTrackingData/WKTrackingData/Core/Util/*"
+  end
 
-  spec.subspec 'AOP' do |AOP|
-  AOP.source_files = 'WKTrackingData/WKTrackingData/Core/AOP/*'
+  spec.subspec 'AOP' do |ss|
+    ss.source_files = "WKTrackingData/WKTrackingData/Core/AOP/*"
+    ss.dependency 'WKTrackingData'
+  end
 
 end

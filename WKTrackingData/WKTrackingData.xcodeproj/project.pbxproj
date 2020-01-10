@@ -228,6 +228,8 @@
 				CA52511123BD99BB003EF2E0 /* WKTrackingDataManager.m */,
 				CA52511223BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.h */,
 				CA52511023BD99BB003EF2E0 /* WKTrackingDataViewPathHelper.m */,
+				CA52515B23BDF084003EF2E0 /* NSObject+TrackingData.h */,
+				CA52515C23BDF084003EF2E0 /* NSObject+TrackingData.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -235,8 +237,6 @@
 		CA52511323BD99BB003EF2E0 /* AOP */ = {
 			isa = PBXGroup;
 			children = (
-				CA52515B23BDF084003EF2E0 /* NSObject+TrackingData.h */,
-				CA52515C23BDF084003EF2E0 /* NSObject+TrackingData.m */,
 				CA52516323BF17EA003EF2E0 /* UIApplication+AppdelegateNote.h */,
 				CA52516423BF17EA003EF2E0 /* UIApplication+AppdelegateNote.m */,
 				CA5251C123C325EE003EF2E0 /* UIApplication+UIControlEventPath.h */,
