@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WKTrackingData"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "基于AOP的全埋点库"
 
   spec.description  = "一款轻量级的全埋点库，除了自动追踪用户事件外，也允许业务扩展，忽略和添加自定义参数。"
@@ -50,7 +50,17 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "WKTrackingData/WKTrackingData/Core/*", "WKTrackingData/WKTrackingData/Core/Resources/*", "WKTrackingData/WKTrackingData/Core/Util/*", "WKTrackingData/WKTrackingData/Core/AOP/*"
+  spec.source_files  = "WKTrackingData/WKTrackingData/Core/*", "WKTrackingData/WKTrackingData/Core/Resources/*"
 
+  spec.resource_bundles = {
+    'WKTrackingData' => ['WKTrackingData/WKTrackingData/Core/Resources/*'],
+  }
+
+  # 子目录
+  spec.subspec 'Util' do |Util|
+  Util.source_files = 'WKTrackingData/WKTrackingData/Core/Util/*'
+
+  spec.subspec 'AOP' do |AOP|
+  AOP.source_files = 'WKTrackingData/WKTrackingData/Core/AOP/*'
 
 end
