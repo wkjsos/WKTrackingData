@@ -83,6 +83,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
+        // json 文件使用 resource_bundles 引用，demo运行会报错，注意使用 pod 导入。
         NSString *bundlePath = [[NSBundle bundleForClass:NSClassFromString(@"WKTrackingDataManager")] pathForResource:@"WKTrackingData" ofType:@"bundle"];
         
         NSBundle *sensorsBundle = [NSBundle bundleWithPath:bundlePath];
