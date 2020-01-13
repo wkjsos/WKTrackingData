@@ -19,6 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     [kWKTrackingDataManager enableTracking];
+    
     return YES;
 }
 

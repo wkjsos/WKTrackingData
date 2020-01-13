@@ -1,5 +1,8 @@
 # WKTrackingData
 
+[![](https://travis-ci.com/wkjsos/WKTrackingData.svg?branch=master)](https://travis-ci.com/wkjsos/WKTrackingData)
+
+
 
 基于AOP的全埋点库
 

@@ -26,41 +26,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self testUploadTrackingData];
+    
+    [self testIgnoreTracking];
+    [self test_wk_trackingData];
+    
+    [self testTapGestureRecognizer];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    [self testAlertAction];
+}
+
+#pragma mark - test method
+
+- (void)testTapGestureRecognizer {
+   
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
-    
     [tap addTarget:self action:@selector(tap)];
-    
+    [self.sub addGestureRecognizer:tap];
+}
+
+- (void)test_wk_trackingData {
     self.sub.wk_trackingData = @{
         @"id" : @"4396",
         @"type" : @"event_type"
     };
-    
-    [self.sub addGestureRecognizer:tap];
-    
+}
+
+- (void)testIgnoreTracking {
     self.slider.wk_ignoreTracking = YES;
-    
-    kWKTrackingDataManager.uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
-        
-        // do something
-        
-        // remove uploaded data
-        remove();
-    };
-    
 }
 
-- (void)tap {
-    NSLog(@"view tap");
-}
-- (IBAction)switchChange:(id)sender {
-}
-
-- (IBAction)buttonClick:(UIButton *) button {
-    
-//    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:@"message" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"confirm", nil];
-//    [alertView show];
-//    return;
-
+- (void)testAlertAction {
     UIViewController *topVC = [UIViewController wk_topViewController];
 
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Alert" message:nil preferredStyle:UIAlertControllerStyleAlert];
@@ -73,29 +72,24 @@
     }];
 }
 
-- (IBAction)segementChange:(id)sender {
-}
-- (IBAction)sliderChange:(id)sender {
-}
-- (IBAction)stepperChange:(id)sender {
+- (void)testAlertView {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"title" message:@"message" delegate:self cancelButtonTitle:@"cancle" otherButtonTitles:@"confirm", nil];
+    [alertView show];
 }
 
-#pragma mark - private method
-
-- (void)test {
+- (void)testUploadTrackingData {
     kWKTrackingDataManager.uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
-        NSLog(@"trackingDataArray");
+        // do something
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            remove ? remove() : nil;
-        });
+        // remove uploaded data
+        remove();
     };
-    
-    for (int i = 0; i < 31; i++) {
-        [kWKTrackingDataManager memeryCacheTrackingData:@{
-            [NSString stringWithFormat:@"key:%@" , @(i)] : [NSString stringWithFormat:@"value:%@" , @(i)]
-        }];
-    }
+}
+
+#pragma mark - event method
+
+- (void)tap {
+    NSLog(@"view tap");
 }
 
 @end
