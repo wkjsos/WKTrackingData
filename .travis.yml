@@ -1,20 +1,13 @@
 language: objective-c
 
-xcode_project: WKTrackingData/WKTrackingData.xcodeproj # path to your xcodeproj folder
-xcode_scheme: WKTrackingData
-xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11 Pro Max
+# xcode_project: WKTrackingData/WKTrackingData.xcodeproj # path to your xcodeproj folder
+# xcode_scheme: WKTrackingData
+# xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone 11 Pro Max
 
 script: 
-  - GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
-
-before_install: 
-- pip install codecov 
-- pip install coverage
-
-install: true
-
-codecov:
-  token: 8a8a924b-bf9c-4489-9202-beeacb162633
+  - |
+    set -o pipefail
+    xcodebuild clean test -project WKTrackingData/WKTrackingData.xcodeproj -scheme WKTrackingData -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.0' -enableCodeCoverage YES | bundle exec xcpretty
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) 
