@@ -33,7 +33,6 @@
 		CA52517423BF32F1003EF2E0 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517323BF32F1003EF2E0 /* CollectionViewController.m */; };
 		CA52517723BF3677003EF2E0 /* UIResponder+EventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */; };
 		CA5251C323C325EE003EF2E0 /* UIApplication+UIControlEventPath.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */; };
-		CA5251C923C42255003EF2E0 /* WKTrackingData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */; };
 		CA5251CC23C43237003EF2E0 /* UIAlertAction+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251CB23C43237003EF2E0 /* UIAlertAction+Tracking.m */; };
 		CA5251D023C46AB0003EF2E0 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251CF23C46AB0003EF2E0 /* NSObject+Swizzling.m */; };
 		CA5251D323C48C4B003EF2E0 /* UIAlertView+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5251D223C48C4B003EF2E0 /* UIAlertView+Tracking.m */; };
@@ -59,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA16468D23CC0F7D00E94256 /* viewcontroller_blacklist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = viewcontroller_blacklist.json; sourceTree = "<group>"; };
 		CA1F8CD223C5800B00D22D7B /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		CA1F8CD323C5800B00D22D7B /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		CA5250D323BD98ED003EF2E0 /* WKTrackingData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKTrackingData.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 		CA52517623BF3677003EF2E0 /* UIResponder+EventPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+EventPath.m"; sourceTree = "<group>"; };
 		CA5251C123C325EE003EF2E0 /* UIApplication+UIControlEventPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+UIControlEventPath.h"; sourceTree = "<group>"; };
 		CA5251C223C325EE003EF2E0 /* UIApplication+UIControlEventPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+UIControlEventPath.m"; sourceTree = "<group>"; };
-		CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WKTrackingData.bundle; sourceTree = "<group>"; };
 		CA5251CA23C43237003EF2E0 /* UIAlertAction+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+Tracking.h"; sourceTree = "<group>"; };
 		CA5251CB23C43237003EF2E0 /* UIAlertAction+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+Tracking.m"; sourceTree = "<group>"; };
 		CA5251CE23C46AB0003EF2E0 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
@@ -277,7 +276,7 @@
 		CA5251C723C42202003EF2E0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CA5251C823C42255003EF2E0 /* WKTrackingData.bundle */,
+				CA16468D23CC0F7D00E94256 /* viewcontroller_blacklist.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -385,7 +384,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA5251C923C42255003EF2E0 /* WKTrackingData.bundle in Resources */,
 				CA5250E623BD98F1003EF2E0 /* LaunchScreen.storyboard in Resources */,
 				CA5250E323BD98F1003EF2E0 /* Assets.xcassets in Resources */,
 				CA5250E123BD98ED003EF2E0 /* Main.storyboard in Resources */,
