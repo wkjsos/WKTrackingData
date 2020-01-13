@@ -66,8 +66,7 @@ $ pod install
 
     [kWKTrackingDataManager enableTracking];
     return YES;
-}
-​``` 
+} 
 ```
 在`didFinishLaunchingWithOptions`中开启事件追踪，如果在`didFinishLaunchingWithOptions`之后启用，会导致部分事件无法覆盖。
 

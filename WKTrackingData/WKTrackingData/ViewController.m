@@ -80,12 +80,6 @@
 - (IBAction)stepperChange:(id)sender {
 }
 
-
-//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-//
-//
-//}
-
 #pragma mark - private method
 
 - (void)test {
