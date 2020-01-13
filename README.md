@@ -1,4 +1,6 @@
 # WKTrackingData
+
+
 基于AOP的全埋点库
 
 ## Installation with CocoaPods
@@ -18,7 +20,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 
 target 'TargetName' do
-pod 'WKTrackingData', '~> 0.0.2'
+pod 'WKTrackingData', '~> 0.0.9'
 end
 ```
 

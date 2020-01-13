@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode11
+xcode_project: WKTrackingData/WKTrackingData.xcodeproj # path to your xcodeproj folder
+xcode_scheme: WKTrackingData
+xcode_destination: platform=iOS Simulator,OS=10.1,name=iPhone 11 Pro Max
