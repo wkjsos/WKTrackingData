@@ -1,6 +1,6 @@
 # WKTrackingData
 
-[![](https://travis-ci.com/wkjsos/WKTrackingData.svg?branch=master)](https://travis-ci.com/wkjsos/WKTrackingData)![](https://img.shields.io/cocoapods/v/WKTrackingData.svg?style=flat)![](https://img.shields.io/cocoapods/p/WKTrackingData.svg?style=flat)![](https://img.shields.io/github/languages/top/wkjsos/WKTrackingData)![](https://img.shields.io/cocoapods/l/WKTrackingData.svg?style=flat)
+[![codecov](https://codecov.io/gh/wkjsos/WKTrackingData/branch/master/graph/badge.svg)](https://codecov.io/gh/wkjsos/WKTrackingData)[![](https://travis-ci.com/wkjsos/WKTrackingData.svg?branch=master)](https://travis-ci.com/wkjsos/WKTrackingData)![](https://img.shields.io/cocoapods/v/WKTrackingData.svg?style=flat)![](https://img.shields.io/cocoapods/p/WKTrackingData.svg?style=flat)![](https://img.shields.io/github/languages/top/wkjsos/WKTrackingData)![](https://img.shields.io/cocoapods/l/WKTrackingData.svg?style=flat)
 
 基于AOP的全埋点库
 
