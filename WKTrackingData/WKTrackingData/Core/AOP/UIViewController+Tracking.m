@@ -83,7 +83,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        NSString *bundlePath = [[NSBundle bundleForClass:NSClassFromString(@"WKTrackingDataManager")] pathForResource:@"WKTrackingData" ofType:@"bundle"];
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"WKTrackingData" ofType:@"bundle"];
         
         NSBundle *sensorsBundle = [NSBundle bundleWithPath:bundlePath];
         
