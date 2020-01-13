@@ -18,11 +18,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "8.0"
 
   spec.source       = { :git => "https://github.com/wkjsos/WKTrackingData.git", :tag => "#{spec.version}" }
-  spec.source_files  = "WKTrackingData/WKTrackingData/Core/*"
+  spec.source_files = "WKTrackingData/WKTrackingData/Core/*"
 
-  spec.resource_bundles = {
-    'WKTrackingData' => ['WKTrackingData/WKTrackingData/Core/Resources/WKTrackingData.bundle']
-  }
+  spec.resource     = 'WKTrackingData/WKTrackingData/Core/Resources/WKTrackingData.bundle'
 
   spec.subspec 'Util' do |ss|
     ss.source_files = "WKTrackingData/WKTrackingData/Core/Util/*"
