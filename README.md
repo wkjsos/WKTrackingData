@@ -1,8 +1,6 @@
 # WKTrackingData
 
-[![](https://travis-ci.com/wkjsos/WKTrackingData.svg?branch=master)](https://travis-ci.com/wkjsos/WKTrackingData)
-
-
+[![](https://travis-ci.com/wkjsos/WKTrackingData.svg?branch=master)](https://travis-ci.com/wkjsos/WKTrackingData)![](https://img.shields.io/cocoapods/v/WKTrackingData.svg?style=flat)![](https://img.shields.io/cocoapods/p/WKTrackingData.svg?style=flat)![](https://img.shields.io/github/languages/top/wkjsos/WKTrackingData)![](https://img.shields.io/cocoapods/l/WKTrackingData.svg?style=flat)
 
 基于AOP的全埋点库
 
@@ -138,4 +136,5 @@ self.slider.wk_ignoreTracking = YES;
 
 ## License
 
-WKTrackingData is released under the MIT license. 
+WKTrackingData is released under the MIT license. ![](https://img.shields.io/cocoapods/l/WKTrackingData.svg?style=flat)
+
