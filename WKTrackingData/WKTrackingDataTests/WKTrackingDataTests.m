@@ -8,8 +8,6 @@
 
 #import <XCTest/XCTest.h>
 
-#import "WKTrackingDataManager.h"
-
 @interface WKTrackingDataTests : XCTestCase
 
 @end
@@ -18,19 +16,6 @@
 
 - (void)testExample {
     
-    kWKTrackingDataManager.uploadTrackingDataTrigger = ^(NSArray *trackingDataArray, void (^remove)(void)) {
-        NSLog(@"trackingDataArray");
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            remove ? remove() : nil;
-        });
-    };
-    
-    for (int i = 0; i < 30; i++) {
-        [kWKTrackingDataManager memeryCacheTrackingData:@{
-            [NSString stringWithFormat:@"key:%@" , @(i)] : [NSString stringWithFormat:@"value:%@" , @(i)]
-        }];
-    }
 }
 
 
