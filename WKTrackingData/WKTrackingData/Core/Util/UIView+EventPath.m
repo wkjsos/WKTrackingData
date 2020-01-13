@@ -1,5 +1,5 @@
 //
-//  UIView+GestureHook.m
+//  UIView+EventPath.m
 //  WKTrackingData
 //
 //  Created by wkj on 2020/1/1.
