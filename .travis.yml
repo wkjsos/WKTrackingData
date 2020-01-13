@@ -13,5 +13,8 @@ before_install:
 
 install: true
 
+codecov:
+  token: 8a8a924b-bf9c-4489-9202-beeacb162633
+
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t :8a8a924b-bf9c-4489-9202-beeacb162633
+  - bash <(curl -s https://codecov.io/bash) 
